@@ -60,6 +60,20 @@ const config: HardhatUserConfig = {
       gasPrice: parseUnits('20', 'gwei').toNumber(),
       accounts: [process.env.POLYGON_DEPLOYER_PRIVATE_KEY || defaultPrivateKey],
     },
+    rinkeby: {
+      chainId: 4,
+      url: 'https://rinkeby.infura.io',
+      gasPrice: parseUnits('1', 'gwei').toNumber(),
+      accounts: [process.env.RINKEBY_DEPLOYER_PRIVATE_KEY || defaultPrivateKey],
+    },
+    ethereum: {
+      chainId: 1,
+      url: 'https://cloudflare-eth.com', //`https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      gasPrice: parseUnits('20', 'gwei').toNumber(),
+      accounts: [
+        process.env.ETHEREUM_DEPLOYER_PRIVATE_KEY || defaultPrivateKey,
+      ],
+    },
   },
 }
 

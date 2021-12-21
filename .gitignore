@@ -4,10 +4,3 @@ node_modules/
 .vscode
 .vercel
 .env
-
-#Hardhat files
-cache
-artifacts
-coverage.json
-coverage
-typechain-types

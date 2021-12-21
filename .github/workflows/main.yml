@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - master
+      - main
   pull_request:
     branches:
       - master
+      - main
       - dev
 
 jobs:
@@ -27,12 +29,12 @@ jobs:
         run: npm i
         env:
           CI: true
-      - name: Testing
-        run: npm run test:coverage
+      - name: Testing Hardhat with coverage
+        run: cd packages/hardhat && npm run test:coverage
         env:
           CI: true
-      - name: Testing Coverage Check
-        run: npm run test:coverage:check
+      - name: Testing Hardhat Coverage Check
+        run: cd packages/hardhat && npm run test:coverage:check
         env:
           CI: true
   lint:

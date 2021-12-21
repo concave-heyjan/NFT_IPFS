@@ -2,11 +2,4 @@
 .idea
 .vscode
 .vercel
-
-cache
-artifacts
-coverage/
-coverage.json
-deployments/
-typechain-types/
-
+packages
