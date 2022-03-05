@@ -1,25 +1,7 @@
 {
-  "name": "concavecation",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "root",
   "private": true,
-  "author": "concave",
-  "license": "MIT",
-  "engines": {
-    "node": ">= 16"
-  },
-  "scripts": {
-    "install": "lerna bootstrap",
-    "build": "lerna run build",
-    "test": "lerna run test",
-    "lint": "lerna run lint",
-    "lint:fix": "lerna run lint:fix",
-    "prettier": "prettier --check . && lerna run prettier",
-    "prettier:write": "prettier --write . && lerna run prettier:write"
-  },
   "devDependencies": {
-    "lerna": "^4.0.0",
-    "prettier": "^2.5.1"
+    "lerna": "^4.0.0"
   }
 }
